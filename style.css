@@ -100,3 +100,7 @@ main {
 .top {
     top: 0;
 }
+.pagefull{
+    height: 1 vh;
+    width: 0.5 vw;
+}
