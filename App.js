@@ -10,7 +10,7 @@ import Meme from "./components/Meme"
  */
 export default function App() {
     return (
-        <div>
+        <div className = "pagefull">
             <Header />
             <Meme />
         </div>
