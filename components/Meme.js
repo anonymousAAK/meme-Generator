@@ -18,8 +18,7 @@ export default function Meme() {
         const randomNumber = Math.floor(Math.random() * allMemes.length)
         const url = allMemes[randomNumber].url
         setMeme(prevMeme => ({
-            topText: prevMeme.topText,
-            bottomText: prevMeme.bottomText,
+            ...prevMeme,
             randomImage: url
         }))
         
@@ -28,9 +27,7 @@ export default function Meme() {
     function handleChange(event) {
         const {name, value} = event.target
         setMeme(prevMeme => ({
-            topText: prevMeme.topText,
-            bottomText: prevMeme.bottomText,
-            randomImage: url,
+            ...prevMeme,
             [name]: value
         }))
     }
