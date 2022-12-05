@@ -31,7 +31,7 @@ export default function Meme() {
         setMeme(prevMeme => ({
             topText: prevMeme.topText,
             bottomText: prevMeme.bottomText,
-            randomImage: "http://i.imgflip.com/1bij.jpg",
+            randomImage: prevMeme.randomImage,
             [name]: value
         }))
     }
